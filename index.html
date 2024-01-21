@@ -11,8 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <!-- Image Slider -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <!-- style sheets CSS Files -->
     <link rel="stylesheet" href="index-styles.css">
     <link rel="stylesheet" href="CSS Files/Responsive-Style.css">
@@ -62,9 +60,9 @@
                 <div class="right-section section">
                     <div id="gallarybox">
                         <div id="gallaryplate">
-                            <div class="img1"><img src="Images/profile-img1.png" alt=""></div>
-                            <div class="img2"><img src="Images/profile-img2.png" alt=""></div>
-                            <div class="img3"><img src="Images/profile-img3.png" alt=""></div>
+                            <div class="img-boxes"><img src="Images/profile-img1.png" alt=""></div>
+                            <div class="img-boxes"><img src="Images/profile-img2.png" alt=""></div>
+                            <div class="img-boxes"><img src="Images/profile-img3.png" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -79,18 +77,6 @@
     </div>
 
     <script>
-        // -------------------------------- Image Slider --------------------------------
-        $(document).ready(function () {
-            // Auto slide the carousel every 3 seconds
-            setInterval(function () {
-                $('#gallaryplate').animate({ marginLeft: '-100%' }, 800, function () {
-                    // Move the first image to the end of the carousel
-                    $(this).css({ marginLeft: 0 }).find('div:last').after($(this).find('div:first'));
-                });
-            }, 3000);
-        });
-
-
         // -------------------------------- Ham Burger --------------------------------
         let menubtn = document.getElementById("menubtn")
         let menubox = document.getElementById("menubox")

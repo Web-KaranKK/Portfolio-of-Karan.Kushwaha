@@ -52,13 +52,22 @@
     html {
         font-size: 15px;
     }
+    body {
+        background: url(../Images/tablet-bg.jpg);
+        background-position: top;
+        background-size: contain;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     html {
         font-size: 14px;
     }
-
+    body {
+        background: url(../Images/phone-bg.jpg);
+        background-position: top;
+        background-size: contain;
+    }
     #gallarybox {
         width: 90vw;
         padding: 1.5vw;
