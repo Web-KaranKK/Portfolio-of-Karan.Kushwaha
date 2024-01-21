@@ -31,11 +31,11 @@
                     </div>
                     <div id="menubox">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Detailed Information</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Curriculam Vitae</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="HTML Files/about-me.html">Detailed Information</a></li>
+                            <li><a href="HTML Files/educational-qualification.html">Educational Qualifications</a></li>
+                            <li><a href="HTML Files/projects.html">Projects</a></li>
+                            <li><a href="HTML Files/curriculam-vitae.html">Curriculam Vitae</a></li>
                         </ul>
                     </div>
                 </div>
@@ -48,10 +48,10 @@
                         <div class="headline">Accounting & Taxation Enthusiast</div>
                         <h1 class="name">I'm Karan Kushwaha</h1>
                         <div class="btnbox">
-                            <a class="moreabtme-btn btn" href="#">MORE ABOUT ME
+                            <a class="moreabtme-btn btn" href="HTML Files/about-me.html">MORE ABOUT ME
                                 <img src="Images/more-abt-me.png" alt="" class="icon-img">
                             </a>
-                            <a class="contact-btn btn" href="#">CONTACT ME
+                            <a class="contact-btn btn" href="HTML Files/contact-me.html">CONTACT ME
                                 <img src="Images/contact-me.png" alt="" class="icon-img">
                             </a>
                         </div>
@@ -79,6 +79,7 @@
     </div>
 
     <script>
+        // -------------------------------- Image Slider --------------------------------
         $(document).ready(function () {
             // Auto slide the carousel every 3 seconds
             setInterval(function () {
@@ -88,8 +89,9 @@
                 });
             }, 3000);
         });
-    </script>
-    <script>
+
+
+        // -------------------------------- Ham Burger --------------------------------
         let menubtn = document.getElementById("menubtn")
         let menubox = document.getElementById("menubox")
 

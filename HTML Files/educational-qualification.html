@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Qualifications | Karan | Portfolio</title>
+    <!-- Web-Icon -->
+    <link rel="shortcut icon" href="../Images/profile-img3.png" type="image/x-icon">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- style sheets CSS Files -->
+    <link rel="stylesheet" href="../index-styles.css">
+    <link rel="stylesheet" href="../CSS Files/Responsive-Style.css">
+    <link rel="stylesheet" href="../CSS Files/educational-qualifications.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="logoname">
+                    <h3><a href="../index.html">Karan.</a></h3>
+                </div>
+                <div class="menubag">
+                    <div id="menu-icon">
+                        <img src="../Images/menu.png" alt="" class="icon-img" id="menubtn">
+                    </div>
+                    <div id="menubox">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../HTML Files/about-me.html">Detailed Information</a></li>
+                            <li><a href="../HTML Files/educational-qualification.html">Educational Qualifications</a></li>
+                            <li><a href="../HTML Files/projects.html">Projects</a></li>
+                            <li><a href="../HTML Files/curriculam-vitae.html">Curriculam Vitae</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="left-section section">
+                    <div class="contentbox">
+                        <div class="headline">Home > Educational Qualification</div>
+                        <h1 class="name">Qualification Details</h1>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="right-section section">
+                    
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <p>Copyright <img src="../Images/cpyright.png" alt="" class="icon-img">2024 All rights reserved | This Website is Created with 💝 by <strong>Karan Kushwaha</strong></p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        let menubtn = document.getElementById("menubtn")
+        let menubox = document.getElementById("menubox")
+
+        menubtn.addEventListener("click", togglemenu)
+        function togglemenu() {
+            menubox.classList.toggle("menuboxtoggle")
+        }
+    </script>
+</body>
+
+</html>
