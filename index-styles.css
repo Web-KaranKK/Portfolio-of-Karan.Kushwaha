@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    font-size: 18px;
+}
+
+:root {
+    --primarybg: #011f4b;
+    --secondarybg: #005a96;
+    --primarytext: #011f4b;
+    --secondarytext: #005b96;
+    --deemtext: #a8a8a8;
+    --deembg: #f5f7f8;
+    --white: #ffffff;
+    --primaryblack: #04000c;
+}
+
+/* ---------------------Default CSS--------------------- */
+body {
+    background: url(Images/15442020_5590449.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: fit-content;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.icon-img {
+    width: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ----------------------Header CSS---------------------- */
+/* ----------------------Header LOGO Name CSS---------------------- */
+header {
+    width: 100vw;
+    padding: 1rem;
+}
+
+.header {
+    background-color: var(--deembg);
+    border-radius: 1rem;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.263);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logoname {
+    padding: 0.5rem;
+}
+
+.header .logoname h3 a {
+    border-radius: 1rem;
+    padding: 1rem 0.5rem;
+    font-size: 1.5rem;
+    color: var(--primaryblack);
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.153);
+    filter: drop-shadow(0px 5px 8px #011f4b2d);
+}
+
+.header .logoname h3 a:hover {
+    background-color: var(--white);
+}
+
+
+/* ----------------------Header Menu Bag CSS---------------------- */
+.header .menubag {
+    /* cursor: pointer; */
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--primaryblack);
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.153);
+    position: relative;
+}
+
+.header .menubag #menu-icon .icon-img {
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    width: 3.8rem;
+    border-radius: 0.5rem;
+    filter: drop-shadow(0px 5px 8px #011f4b2d);
+}
+
+.header .menubag #menu-icon .icon-img:hover {
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.071);
+    background-color: var(--white);
+}
+
+.header .menubag #menubox {
+    position: absolute;
+    right: 0rem;
+    margin-top: -0.65rem;
+    height: 0;
+    width: fit-content;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ----------------------Header Toggle height Menu CSS---------------------- */
+.header .menubag #menubox.menuboxtoggle {
+    height: calc(55px * 5 + 20px);
+}
+
+.header .menubag #menubox ul {
+    list-style-type: none;
+    width: fit-content;
+    background-color: var(--deembg);
+    padding: 10px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.263);
+    overflow: hidden;
+    border: none;
+    border-radius: 0.15rem;
+    border-end-end-radius: 1rem;
+}
+
+.header .menubag #menubox ul li a {
+    display: block;
+    text-wrap: nowrap;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    height: 55px;
+    color: var(--primarytext);
+    border-radius: 1rem;
+}
+
+.header .menubag #menubox ul li a:hover {
+    background-color: var(--white);
+}
+
+
+/* ----------------------Main CSS---------------------- */
+main {
+    width: 100vw;
+    min-height: 90vh;
+    /* Responsive display settings */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* ----------------------Default Section CSS---------------------- */
+.section {
+    padding: 2rem 1rem;
+    width: 50vw;
+    overflow: hidden;
+    /* border: solid red; */
+}
+
+/* ----------------------Left Section CSS---------------------- */
+.left-section {
+    height: fit-content;
+    display: block;
+}
+
+/* ----------------------Left Section Content CSS---------------------- */
+.contentbox .headline,
+.name {
+    padding: 0.75rem 1rem;
+}
+
+.contentbox .headline {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.25rem 1.5rem;
+    margin-bottom: 0.5rem;
+    filter: drop-shadow(0px 5px 8px #011f4b);
+}
+
+.contentbox .name {
+    cursor: pointer;
+    width: fit-content;
+    color: var(--primarytext);
+    font-size: 6rem;
+    text-wrap: wrap;
+    border-radius: 1rem;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.105);
+    text-shadow: px 2px 5px rgba(0, 0, 0, 0.226);
+    background: rgba(255, 255, 255, 0.313);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    transition: all 0.3s ease-in-out;
+    filter: drop-shadow(0px 10px 13px #011f4b7d);
+}
+
+.contentbox .name:hover {
+    margin-left: 0.2rem;
+}
+
+/* ----------------------Left Section Buttons CSS---------------------- */
+
+.btnbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: red solid;   */
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.btnbox a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--deembg);
+    color: var(--secondarytext);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1.5rem 2.5rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--deemtext);
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.087);
+    filter: drop-shadow(0px 8px 12px #011f4b64);
+    transition: all 0.3s ease-in-out;
+}
+
+.btnbox a:hover {
+    padding: 1.5rem 2.8rem;
+}
+
+.btnbox a img {
+    width: 1.6rem;
+    margin-left: 5px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.087);
+    filter: drop-shadow(0px 5px 8px #011f4b6a);
+}
+
+/* ----------------------Right Section CSS---------------------- */
+
+.right-section {
+    width: 50vw;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gallarybox {
+    width: 40vw;
+    padding: 1vw;
+    margin: 2.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1.5rem;
+    /* border: white solid; */
+    filter: drop-shadow(0px 15px 20px #011f4b52);
+}
+
+#gallaryplate {
+    width: 105vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--primaryblack);
+    border-radius: 1.5rem;
+    /* border: blue solid; */
+}
+
+#gallaryplate img {
+    width: 38vw;
+    /* border: solid red; */
+}
+
+#gallarybox::before,
+#gallarybox::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    top: -15px;
+    left: -15px;
+    border-radius: 8px;
+    background: linear-gradient(45deg,
+            #00f, #0066cc, #0099ff, #00ccff, #00ffff, #33ccff, #3399ff,
+            #3366cc, #3333cc, #3300cc, #6600cc, #9900cc, #cc00cc, #ff00cc);
+    background-size: 300%;
+    animation: border 8s linear infinite;
+}
+
+#gallarybox::after {
+    filter: blur(70px);
+}
+
+@keyframes border {
+
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300%;
+    }
+}
+
+
+
+/* ----------------------Footer Footer  CSS---------------------- */
+footer {
+    width: 100vw;
+    height: fit-content;
+    padding: 0.5rem 1rem;
+}
+
+.footer {
+    color: var(--deembg);
+    font-size: 0.9rem;
+    font-weight: 100 !important;
+    width: 100%;
+    height: fit-content;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: var(--primaryblack);
+    border: 1px solid;
+    filter: drop-shadow(0px 15px 20px #011f4b52);
+}
+
+.footer img {
+    width: 1.2rem;
+    margin: 0 0.3rem;
+    position: relative;
+    top: 5px;
+}
+
+.footer strong {
+    margin-left: 6px;
+    color: var(--white);
+}

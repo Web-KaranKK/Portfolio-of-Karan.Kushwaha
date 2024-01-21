@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan Kushwaha | Portfolio</title>
+    <!-- Web-Icon -->
+    <link rel="shortcut icon" href="Images/profile-img3.png" type="image/x-icon">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- Image Slider -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- style sheets CSS Files -->
+    <link rel="stylesheet" href="index-styles.css">
+    <link rel="stylesheet" href="CSS Files/Responsive-Style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="logoname">
+                    <h3><a href="index.html">Karan.</a></h3>
+                </div>
+                <div class="menubag">
+                    <div id="menu-icon">
+                        <img src="Images/menu.png" alt="" class="icon-img" id="menubtn">
+                    </div>
+                    <div id="menubox">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Detailed Information</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Curriculam Vitae</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="left-section section">
+                    <div class="contentbox">
+                        <div class="headline">Accounting & Taxation Enthusiast</div>
+                        <h1 class="name">I'm Karan Kushwaha</h1>
+                        <div class="btnbox">
+                            <a class="moreabtme-btn btn" href="#">MORE ABOUT ME
+                                <img src="Images/more-abt-me.png" alt="" class="icon-img">
+                            </a>
+                            <a class="contact-btn btn" href="#">CONTACT ME
+                                <img src="Images/contact-me.png" alt="" class="icon-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="right-section section">
+                    <div id="gallarybox">
+                        <div id="gallaryplate">
+                            <div class="img1"><img src="Images/profile-img1.png" alt=""></div>
+                            <div class="img2"><img src="Images/profile-img2.png" alt=""></div>
+                            <div class="img3"><img src="Images/profile-img3.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <p>Copyright <img src="Images/cpyright.png" alt="" class="icon-img">2024 All rights reserved | This
+                    Website is Created with 💝 by <strong>Karan Kushwaha</strong></p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            // Auto slide the carousel every 3 seconds
+            setInterval(function () {
+                $('#gallaryplate').animate({ marginLeft: '-100%' }, 800, function () {
+                    // Move the first image to the end of the carousel
+                    $(this).css({ marginLeft: 0 }).find('div:last').after($(this).find('div:first'));
+                });
+            }, 3000);
+        });
+    </script>
+    <script>
+        let menubtn = document.getElementById("menubtn")
+        let menubox = document.getElementById("menubox")
+
+        menubtn.addEventListener("click", togglemenu)
+        function togglemenu() {
+            menubox.classList.toggle("menuboxtoggle")
+        }
+    </script>
+
+</body>
+
+</html>

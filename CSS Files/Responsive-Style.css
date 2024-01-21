@@ -1,0 +1,94 @@
+/* ---------------------- Responsive CSS ---------------------- */
+
+/* Adjust font size for smaller screens */
+@media only screen and (max-width: 1140px) {
+    html {
+        font-size: 17px;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .section {
+        width: 100vw;
+    }
+
+    .contentbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .contentbox .name {
+        padding: 1.5rem 1rem;
+        text-align: center;
+        flex-wrap: nowrap;
+    }
+
+    .btnbox {
+        justify-content: center;
+    }
+
+    #gallarybox {
+        width: 80vw;
+        padding: 1.5vw;
+    }
+
+    #gallaryplate {
+        width: 231vw;
+    }
+
+    #gallaryplate img {
+        width: 77vw;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 14px;
+    }
+
+    #gallarybox {
+        width: 90vw;
+        padding: 1.5vw;
+    }
+
+    #gallaryplate {
+        width: 261vw;
+    }
+
+    #gallaryplate img {
+        width: 87vw;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    html {
+        font-size: 13px;
+    }
+
+    .contentbox .name {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    html {
+        font-size: 12px;
+    }
+
+    .contentbox .name {
+        font-size: 5rem;
+    }
+}
