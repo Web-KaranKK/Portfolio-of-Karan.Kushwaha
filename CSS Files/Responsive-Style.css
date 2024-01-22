@@ -39,11 +39,31 @@
     }
 
     #gallaryplate {
-        width: 231vw;
+        width: 77vw;
     }
 
     #gallaryplate img {
         width: 77vw;
+    }
+    @keyframes imgslide {
+        0%{
+            left: 0vw;
+        }
+        30%{
+            left: 0vw;
+        }
+        35%{
+            left: -77vw;
+        }
+        65%{
+            left: -77vw;
+        }
+        70%{
+            left: -154vw;
+        }
+        100%{
+            left: -154vw;
+        }
     }
 }
 
@@ -56,6 +76,12 @@
         background: url(../Images/tablet-bg.jpg);
         background-position: top;
         background-size: contain;
+    }
+    .btnbox{
+        margin-top: 1rem;
+    }
+    #gallarybox {
+        margin: 1.5rem 0;
     }
 }
 
@@ -74,11 +100,31 @@
     }
 
     #gallaryplate {
-        width: 261vw;
+        width: 87vw;
     }
 
     #gallaryplate img {
         width: 87vw;
+    }
+    @keyframes imgslide {
+        0%{
+            left: 0vw;
+        }
+        30%{
+            left: 0vw;
+        }
+        35%{
+            left: -87vw;
+        }
+        65%{
+            left: -87vw;
+        }
+        70%{
+            left: -174vw;
+        }
+        100%{
+            left: -174vw;
+        }
     }
 }
 
